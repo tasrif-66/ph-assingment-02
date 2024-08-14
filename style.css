@@ -3,8 +3,8 @@
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: black; */
-
+  /* background-color: black;
+color: #fff; */
 }
 /* navbar start here */
 .navbar{
@@ -17,10 +17,11 @@
 }
 
 .logo{
-  color: #ff5733;
+ 
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
+   color: #ff5733;
 }
 
 
@@ -39,19 +40,42 @@
   display: none;
 }
 
+/* section 2 start here */
+
+.hero{
+  background: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+justify-content: space-evenly;
+}
+
+.hero-sec-1{
+border: 2px solid red;
+height: 50vhS;
+}
+
+.get-body{
+  position: static;
+width: 50%;
+height: 50%;
+border: 2px solid tomato;
+ 
+}
+
 @media screen and (max-width:576px){
   
 .btn{
  display: none;
 }
 .menu-icon{
+ margin: 0 auto;
+ margin-right: 30%;
 display: block;
 cursor: pointer;
 color: #fff;
 }
-.fa-solid{
-  display: block;
-cursor: pointer;
-  color: #fff;
+
 }
-}
+
+
