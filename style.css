@@ -1,10 +1,14 @@
 
 *{
-  margin: 0 ;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   background-color: black;
   /* color: #fff; */
+}
+
+header{
+  margin: o auto;
 }
 /* navbar start here */
 .navbar{
@@ -17,11 +21,11 @@
 }
 
 .logo{
- 
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   color: #ff5733;
+  margin-left: 5px;
 }
 
 
@@ -47,7 +51,7 @@
   color: #fff;
   display: flex;
   align-items: center;
-justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .hero-sec-1{
@@ -77,7 +81,7 @@ height: 50%;
 }
  /* section 2 start here  */
 .section-2{
-  margin-top: 5%;
+  margin-top: 50px;
   text-align: center;
 }
 .section-2 h2{
@@ -88,6 +92,7 @@ height: 50%;
   margin-bottom: 20px;
 }
 .exercise-part{
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -153,15 +158,36 @@ height: 50%;
 }
 
 .triner-img{
+  position: relative;
   width:100%;
   height: 270px;
   border-radius: 10px;
 }
 
+.triner-name{
+  opacity: 0.6;
+  position: absolute;
+  bottom: 5px;
+  z-index: 1;
+}
 
+/* footer sextion */
 
-p{
+footer{
+  max-width: 1680px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p , li {
     color: rgba(255, 255, 255, 0.5);
+}
+li{
+  text-decoration: none;
+}
+h3{
+  color: #fff;
 }
 @media screen and (max-width:576px){
   .logo{
@@ -184,10 +210,16 @@ p{
     display: flex;
     flex-direction: column;
   }
-  .hero-sec-2 , .exercise-part{
+  .exercise-part{
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+  }
+  .hero-sec-2 , {
       display: flex;
       flex-direction: column;
   }
+
   .get-body{
     width: 100%;
 
@@ -196,7 +228,7 @@ p{
     width: 100%;
     padding-top: 50px;
   }
-
+ /* section 3 */
   .section-3{
     display: flex;
     flex-direction: column;
@@ -204,20 +236,41 @@ p{
   .section-3-h1-p{
     display: flex;
     align-items: center;
+    text-align: center;
   }
 
   .section-3-h1{
-    text-align: left;
+    text-align: center;
   }
   .section-3-btn{
     width: 90%;
   }
+
+  /* meet our team */
   .trainer-list{
   margin: 20px 30px;
   position: relative;
- display: flex;
- flex-direction: column;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.team-h1-p > p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+.triner-img{
+  width:100%;
+  height: 270px;
+  border-radius: 10px;
+}
+.triner-name{
+
+}
+footer{
+  display: flex;
+  flex-direction: row;
 }
 }
 
